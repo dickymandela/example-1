@@ -7,10 +7,11 @@ export default function NavItem() {
     { name: "Profile", link: "#profil" },
     { name: "Service", link: "#service" },
     { name: "Harga", link: "#harga" },
-    { name: "Contact", link: "#download" },
+    { name: "Testimoni", link: "#testimoni" },
   ];
 
   const [open, setOpen] = useState(false)
+ 
   return (
     <div className="shadow-md w-full fixed top-0 left-0">
       <div  className="md:flex items-center justify-between bg-white py-5 md:px-10 px-6">
@@ -24,9 +25,7 @@ export default function NavItem() {
               <a href={Link.link}>{Link.name}</a>
             </li>
           ))}
-          <Button>
-            Download
-          </Button>
+           <a href="#download" className="md:ml-8 inline-block bg-[#FE5E44] text-white px-6 py-2 text-sm rounded-lg">Download</a>
         </ul>
       </div>
     </div>
